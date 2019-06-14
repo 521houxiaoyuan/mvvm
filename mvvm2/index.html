@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
+      <div id="box">
+        <input type="text" v-modle="news.content">
+        <p>{{name}}</p>
+        {{news.content}}
+      </div>
+      <script src="mvvm.js"></script>
+      <script>
+          new Mvvm({
+            el: 'box',
+            data: {
+              name: 'kk',
+              news: {
+                content: 'hello,handleman'
+              }
+            }
+          })
+
+          // let obj = {
+          //   name: 'kk',
+          //   age: 20
+          // }
+          // Object.defineProperty(obj, 'name',{
+          //     get(){
+          //       return 'iiiii';
+          //     },
+          //     set(newvalue){
+          //       console.log(newvalue); // ppp
+          //     }
+          // })
+
+          // console.log(obj.name); // 'yyy'
+          // obj.name = "ppp";
+          // console.log(obj.name); // 'yyy
+      </script>
+    </body>
+    </html>
